@@ -1,0 +1,29 @@
+
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+
+    <!-- Icon -->
+    <div class="fadeIn first">
+  
+      <span class="fa fa-user"></span>
+    </div>
+<app-alert></app-alert>
+    <!-- Login Form -->
+    <form  #loginForm='ngForm' (ngSubmit)='Submit(loginForm)'>
+      <input type="text" id="login" class="fadeIn second" autocomplete="off" [(ngModel)]='_user.username' #usname='ngModel' name="username" placeholder="username" required>
+     
+
+      <input type="password" id="password" class="fadeIn third" name="login" [(ngModel)]='_user.password' #psw='ngModel'  placeholder="password" required>
+      <button class="fadeIn fourth" [disabled]='!loginForm.valid'  >Log In</button>
+  
+      <!-- [routerLink]="[{ outlets: { l: ['menu'] } }]" -->
+    </form>
+
+    <!-- Remind Passowrd -->
+    <div id="formFooter">
+      <a class="underlineHover" href="#">Forgot Password?</a>
+    </div>
+
+  </div>
+</div>

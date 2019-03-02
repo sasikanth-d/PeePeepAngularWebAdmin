@@ -1,0 +1,141 @@
+test<div class="wrapper">
+  <!-- Sidebar  -->
+  <nav id="sidebar">
+      <div class="sidebar-header">
+          <h3>PEEPEEP</h3>
+      </div>
+
+      <ul class="list-unstyled components">
+          <p>Adminstration</p>
+          <li class="active">
+              <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle" >Home</a>
+              <ul class="collapse list-unstyled" id="homeSubmenu">
+                  <li>
+                      <a href="#" [routerLink]="['home1']">Home 1</a>
+                  </li>
+                  <li>
+                      <a href="#"  [routerLink]="['home2']">Home 2</a>
+                  </li>
+                  <li>
+                      <a href="#">Home 3</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+              <a href="#">About</a>
+          </li>
+          <li>
+              <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Data Configuration</a>
+              <ul class="collapse list-unstyled" id="pageSubmenu">
+                  <li>
+                      <a href="#">Country</a>
+                  </li>
+                  <li>
+                      <a href="#">State</a>
+                  </li>
+                  <li>
+                      <a href="#">District</a>
+                  </li>
+                   <li>
+                      <a href="#">City</a>
+                  </li>
+                  <li>
+                      <a href="#">Goods</a>
+                  </li>
+                  <li>
+                      <a href="#">Proofs</a>
+                  </li>
+                  <li>
+                      <a href="#">Travel Types</a>
+                  </li>
+                  <li>
+                      <a href="#">Vehicle Companies</a>
+                  </li>
+                  <li>
+                      <a href="#">Vehicle Models</a>
+                  </li>
+                  <li>
+                      <a href="#">Vehicle Type</a>
+                  </li>
+              </ul>
+          </li>
+
+          <li >
+              <a href="#RegistrationSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Registration</a>
+              <ul class="collapse list-unstyled" id="RegistrationSubmenu">
+                  <li>
+                      <a href="#">Driver Registration</a>
+                  </li>
+                  <li>
+                      <a href="#">Vehicle Registration</a>
+                  </li>
+                  <li>
+                      <a href="#">Agent Registration</a>
+                  </li>
+              </ul>
+          </li>
+          <li >
+              <a href="#VerificationSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Verification</a>
+              <ul class="collapse list-unstyled" id="VerificationSubmenu">
+                  <li>
+                      <a href="#">Driver Registration</a>
+                  </li>
+                  <li>
+                      <a href="#">Vehicle Registration</a>
+                  </li>
+                  <li>
+                      <a href="#">Agent Registration</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+              <a href="#">Posted Items</a>
+          </li>
+          <li>
+              <a href="#">Contact</a>
+          </li>
+      </ul>
+
+     
+  </nav>
+
+  <!-- Page Content  -->
+  <div id="content">
+<div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+
+              <button type="button" id="sidebarCollapse" class="btn btn-info">
+                  <i class="fas fa-align-left"></i>
+                  <span>Admin Menu</span>
+              </button>
+              <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <i class="fas fa-align-justify"></i>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="nav navbar-nav ml-auto">
+                      <li class="nav-item active">
+                          <a class="nav-link" href="#">Page</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">Page</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">Page</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" (click)='logout()' href="#">Logout</a>
+                      </li>
+                  </ul>
+                 
+              </div>
+          </div>
+      </nav>
+    </div>
+      <div>
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>
+
